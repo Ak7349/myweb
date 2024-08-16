@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Kharvi</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+<!------------------------------------------ Header ------------------------------------------------->
+
+    <header>
+        <div class="container">
+            <h1>Akshay Kharvi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-background">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to My Webpage</h1>
+                    <p>Data Analyst | Python Programmer | Lifelong Learner</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn-primary">About Me</a>
+                        <a href="#footer" class="btn-secondary">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------ About Me ------------------------------------------------->
+
+    <section id="about" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I’m a Data Analyst with a passion for uncovering insights and solving complex problems. My background in Python programing and Machine Learning has equipped me with a robust skill set to analyze and interpret data effectively. I thrive on transforming raw data into meaningful information and visualizing it in a way that drives informed decision-making.</p>
+                    <p>With experience in various analytical tools and techniques, I enjoy working on projects that challenge my analytical thinking and help businesses leverage their data for growth. My goal is to continuously learn and adapt to new technologies and methodologies to stay ahead in the dynamic field of data analysis.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./resourses/file3.png" alt="Profile Photo">
+                </div>
+            </div>
+            <div class="interactive-buttons">
+                <button id="show-more">Show More</button>
+                <button id="show-skills">Show Skills</button>
+            </div>
+            <div class="hidden-content" id="more-info">
+                <h3>Additional Information</h3>
+                <p>Here is some more detailed information about my background, projects, and achievements. I have worked on numerous projects involving data visualization, statistical analysis, and machine learning. My portfolio includes projects that showcase my skills in data cleaning, data modeling, and creating interactive dashboards.</p>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------ Projects ------------------------------------------------->
+
+    <section id="portfolio" data-aos="fade-up">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-filter">
+                <button id="one_gp" class="filter-btn" data-filter="all">All</button>
+                <button id="two_gp" class="filter-btn" data-filter="web">Web Development</button>
+                <button id="one_gp" class="filter-btn" data-filter="data">Data Analysis</button>
+                <button id="two_gp" class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="data">
+                    <img src="./resourses/tableu1.png" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>USA Lightning strikes</h3>
+                        <p>Lightning records from 2009 till 2018 for evry 3 years.</p>
+                        <button class="view-more" data-project="1">View More</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="data">
+                    <img src="./resourses/fh4.png" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Swimmers webapp</h3>
+                        <p>Couch focused web app for track swimmers records</p>
+                        <button class="view-more" data-project="2">View More</button>
+                    </div>
+                </div>
+                <!-- <div class="portfolio-item" data-category="design">
+                    <img src="project3.jpg" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Project 3</h3>
+                        <p>Design</p>
+                        <button class="view-more" data-project="3">View More</button>
+                    </div>
+                </div> -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="./resourses/fm1.png" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Travel Tracker</h3>
+                        <p>Webapp to mark the countries which you have visited.</p>
+                        <button class="view-more" data-project="3">View More</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="./resourses/to1.png" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Personal activity Tracker</h3>
+                        <p>List youre day to day activity in single tracker.</p>
+                        <button class="view-more" data-project="4">View More</button>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    
+        <!-- Modal for Project Details -->
+        <div id="portfolio-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <!-- Content will be injected via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------ Experience ------------------------------------------------->
+
+    <section id="experience" data-aos="fade-up">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Software Engineer at Wipro LTD</h3>
+                        <span class="date">2022 - 2024</span>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <ul>
+                                <li>Managed and executed projects related to Nutanix Cloud and AWS technologies, ensuring timely delivery and high
+                                    client satisfaction. Designing infrastructure with Nutanix solution and Nutanix File share (NFS) for LDAP devices.
+                                    </li>
+                                <li>Reduced 90% system crash from high resource utilization from production instances. By Implemented auto logoff of
+                                    idle users session from the instance.</li>
+                                <li>Utilized Python scripting for automation, streamlining processes and improving efficiency.
+                                </li>
+                                <li>Demonstrated expertise in Microsoft SQL for database management and optimization</li>
+                                <li>Managed around 15 Nutanix clusters through prism over 50 VM’s. Along with Nutanix File share and object storage
+                                    for each cluster.
+                                    </li>
+                                <li>Worked on migrating the data from on-premise to S3 using Nutanix object store.
+                                </li>
+                                <li>Python, SQL, AWS, Nutanix
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <!-- <div class="card-footer">
+                        <a href="#" class="btn-learn-more">Learn More</a> -->
+                    </div>
+                </div>
+                <!-- <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Junior Data Analyst at DataSolutions</h3>
+                        <span class="date">2019 - 2021</span>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Assisted in data collection and preparation. Created reports and dashboards to visualize trends and key metrics.
+                            Collaborated with senior analysts on various research projects.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn-learn-more">Learn More</a>
+                    </div>
+                </div> -->
+                <!-- Add more experience cards as needed -->
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------ Education ------------------------------------------------->
+
+    <section id="education" data-aos="fade-up">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Google / Advanced Data Analytics Professional Certificate</h3>
+                        <p>Coursera</p>
+                        <span class="date">2024 - 2024</span>
+                        <p>An extensive seven-month job-ready Google Career Certificate training. Demonstrated hands-on experience with
+                            advanced Data Analytics practices and tools, including data science workflows, Python programming and Tableau.
+                            Confidence in exploratory data analysis; statistical data analysis; regression analysis and data modeling, and machine
+                            learning basics.</p>
+                    </div>
+                    <div class="timeline-icon"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor's Degree in Mechanical Engineering</h3>
+                        <p>Visvesvaraya Technological University</p>
+                        <span class="date">2017 - 2021</span>
+                        <p>Relevant Coursework: Mechanical engineer with strong Mathematics and Physics background, C, Python.</p>
+                    </div>
+                    <div class="timeline-icon"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>12'th in Sciense(PCMCs)</h3>
+                        <p>The New English PU college</p>
+                        <span class="date">2016 - 2017</span>
+                        <p>Relevant Coursework: Mathematics, Physics, Computer Science, C++.</p>
+                    </div>
+                    <div class="timeline-icon"></div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------ Skills ------------------------------------------------->
+
+    <section id="skills" data-aos="fade-up">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3><img src="./resourses/svg/python.svg" alt="">Python</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/data-analysis.svg">Data Analysis</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/visual.svg" alt="">Data Visualization</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                    <p>85%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/stats.svg" alt="">Statistical Analysis</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/tableau.svg" alt="">Tableau</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/sql.svg" alt="">SQL</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/postgresql.svg" alt="">PostgreSQL</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/nodejs.svg" alt="">NodeJS</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/aws.svg" alt="">AWS</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill">
+                    <h3><img src="./resourses/svg/nutanix.svg" alt="">Nutanix</h3>
+                    <div class="skill-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------ Certifications ------------------------------------------------->
+
+<section class="certification-section">
+    <div class="certification-container">
+        <div class="certification-header">
+            <h2 data-aos="fade-up">Certifications</h2>
+        </div>
+        <div class="certification-list">
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://coursera.org/share/b23660c778a7f088346aebc0466ff55d">
+                    <img src="./resourses/google adv da.png" alt="Certification 1"></a>
+                <!-- <h3>Google Advanced Data Analyst</h3>
+                <p>Gained skills like statistical analysis, Python, regression models, and machine learning by Google Professional.</p> -->
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://aws.amazon.com/verification"><img src="./resourses/aws.png" alt="Certification 2"></a>
+                <!-- <h3>AWS Certified Cloud Practitioner</h3>
+                <p>Understanding of AWS Cloud, services, and terminology.</p> -->
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://coursera.org/share/47e7db9362de4ef3b57facd186bff380">
+                    <img src="./resourses/google ai.png" alt="Certification 2"></a>
+                <!-- <h3>Google AI Essentials</h3>
+                <p>Google AI Essentials course helps to learn how to make the most of AI.</p> -->
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="./resourses/svg/plus.svg" alt="Certification 2">
+                <!-- <h3>Google AI Essentials</h3>
+                <p>Google AI Essentials course helps to learn how to make the most of AI.</p> -->
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+</section>
+
+<!------------------------------------------ Footer ------------------------------------------------->
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out through any of the platforms below:</p>
+            <div class="social-links">
+                <a href="https://outlook.office.com/mail/deeplink/compose?to=akshaykrishnakharvi.111@gmail.com&subject=Your%20Subject&body=Your%20Body%20Text" class="social-icon" aria-label="Email">
+                    <!-- Gmail SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 13.4L4.6 7h14.8L12 13.4zM20 5H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-8 8.5L4.5 7.5h15L12 13.5z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/your-username" target="_blank" class="social-icon" aria-label="GitHub">
+                    <!-- GitHub SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12c0 4.418 2.867 8.165 6.839 9.496.5.092.682-.217.682-.482v-1.88c-2.783.604-3.371-1.36-3.371-1.36-.454-1.15-1.109-1.46-1.109-1.46-.906-.62.069-.607.069-.607 1.004.07 1.564 1.033 1.564 1.033.892 1.53 2.338 1.088 2.916.832.09-.647.35-1.088.635-1.338-2.207-.25-4.527-1.097-4.527-4.892 0-1.08.386-1.965 1.022-2.658-.102-.253-.443-1.272.097-2.646 0 0 .83-.265 2.717 1.008.788-.219 1.63-.329 2.465-.333.835.003 1.678.114 2.468.333 1.888-1.274 2.716-1.008 2.716-1.008.543 1.374.201 2.393.099 2.646.637.693 1.022 1.578 1.022 2.658 0 3.798-2.322 4.637-4.546 4.886.356.307.673.915.673 1.84v2.73c0 .268.18.577.688.48C21.133 20.165 24 16.418 24 12c0-5.52-4.48-10-10-10z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <!-- LinkedIn SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM7.07 20.73H3.47V9.18h3.6v11.55zm-1.8-12.91c-1.18 0-2.14-.95-2.14-2.13 0-1.18.96-2.13 2.14-2.13s2.14.95 2.14 2.13c0 1.18-.96 2.13-2.14 2.13zm15.67 12.91h-3.6v-5.55c0-1.32-.03-3.03-1.84-3.03-1.84 0-2.12 1.44-2.12 2.93v5.65h-3.6V9.18h3.46v1.58h.05c.48-.91 1.64-1.88 3.38-1.88 3.62 0 4.29 2.38 4.29 5.48v6.37z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 My Webpage. All rights reserved.</p>
+            <p>Designed by <a href="" target="_blank" class="designer-link">Akshay Kharvi</a></p>
+        </div>
+    </div>
+</footer>
+
+<!----------------------------------------------------------------------------------Script ------------------------------------->
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll) library
+        AOS.init();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dynamic content loading example
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                observer.observe(section);
+            });
+        });
+
+        AOS.init({
+            offset: 200, // Offset (in pixels) from the original trigger point
+            duration: 1000, // Duration of animation
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.experience-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Toggle the visibility of the card body on click
+                const body = this.querySelector('.card-body');
+                body.style.opacity = body.style.opacity === '1' ? '0' : '1';
+            });
+        });
+
+        document.getElementById('show-more').addEventListener('click', function() {
+            const moreInfo = document.getElementById('more-info');
+            moreInfo.classList.toggle('show');
+            this.textContent = moreInfo.classList.contains('show') ? 'Show Less' : 'Show More';
+        });
+    
+        document.getElementById('show-skills').addEventListener('click', function() {
+            document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+        });
+
+            // Handle filter button clicks
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Handle view more button clicks
+    document.querySelectorAll('.view-more').forEach(button => {
+        button.addEventListener('click', function() {
+            const projectId = this.getAttribute('data-project');
+            const modal = document.getElementById('portfolio-modal');
+            const modalBody = modal.querySelector('.modal-body');
+
+            // Define example projects
+            const projects = {
+                1: {
+                    title: 'USA Lighning Strikes',
+                    description: 'The lightning strikes from 2009 till 2018 for every 3 year data from USA',
+                    image: './resourses/tableu2.png',
+                    link: 'https://public.tableau.com/views/USALightningstrikes/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'
+                },
+                2: {
+                    title: 'Coach webapp',
+                    description: 'Couach friendly webapp, holds all timing details from each swimmer to track swimmers records',
+                    image: './resourses/fh3.png',
+                    link: 'https://kyojuro.pythonanywhere.com/'
+                },
+                3: {
+                    title: 'Travel Tracker',
+                    description: 'This webapp mark the countries which you and youre family member visited separatly.',
+                    image: './resourses/fm2.png',
+                    link: ''
+                },
+                4: {
+                    title: 'Personal To Do list',
+                    description: 'web app to track and add youre day to day activity.',
+                    image: './resourses/to2.png',
+                    link: ''
+                },
+
+            };
+
+            // Get the project details based on the ID
+            const project = projects[projectId];
+
+            // Set the modal content
+            if (project) {
+                modalBody.innerHTML = `
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <img src="${project.image}" alt="${project.title}" style="width:100%;">
+                    <a href="${project.link}" target="_blank" class="link-button">Visit</a>
+                `;
+            } else {
+                modalBody.innerHTML = `
+                    <h3>Project Not Found</h3>
+                    <p>Sorry, the project details are not available.</p>
+                `;
+            }
+            
+            // Show the modal
+            modal.style.display = 'block';
+        });
+    });
+
+    // Close modal when clicking on the close button
+    document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('portfolio-modal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('portfolio-modal')) {
+            document.getElementById('portfolio-modal').style.display = 'none';
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.hero-background');
+        let scrollPosition = window.scrollY;
+        parallax.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+</html>
